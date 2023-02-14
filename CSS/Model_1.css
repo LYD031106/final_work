@@ -1,0 +1,30 @@
+#right_content{
+    width: 250px;
+}
+#model_1{
+    color: black;
+}
+.special{
+    display: flex;
+    justify-content: space-around;
+}
+.special img{
+    max-width: 100%;
+    height: 100px;
+}
+#image_inside_1 span{
+    vertical-align: middle;
+    font-size: large;
+    line-height: 550%;
+}
+ul>a li{
+    background-color: hsl(0deg 0% 100% / 70%);
+}
+
+#model_latex{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+

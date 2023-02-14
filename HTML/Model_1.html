@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/model.css">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <link rel="stylesheet" href="../CSS/back.css">
+    <link rel="stylesheet" href="../CSS/Model_1.css">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+	    tex2jax: {
+	        inlineMath: [['$','$'], ['\\(','\\)']],
+	        processEscapes: true
+	    }
+	});
+    </script>
+    <script src="../JS/model.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 导航部分 -->
+    <div style="height: 115px;">
+        <nav>
+            <img src="../image/icon.svg" alt="">
+            <ul>
+                <a href="../index.html">                
+                    <li>
+                       <span>主页</span>
+                       <a href=""></a>
+                    </li>
+                </a>
+                <li>
+                    <span>背景</span>
+                    <img src="../image/向左.png" alt="" class="left_point">
+                    <ul class="down_li">
+                        <a href="../html/BackGround.html"><li>农药污染现状</li></a>
+                        <a href="../html/BackGround_2.html"><li>总结</li></a>
+                    </ul>
+                </li>
+                    <li>
+                        <span>实验</span>
+                        <img src="../image/向左.png" alt="" class="left_point">
+                        <ul class="down_li">
+                            <a href="../html/Lab_1.html"><li>脱卤系统</li></a>
+                            <a href="../html/Lab_2.html"><li>有机磷降解系统</li></a>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>模型</span>
+                        <img src="../image/向左.png" alt="" class="left_point">
+                        <ul class="down_li">
+                            <a href="../html/Model_1.html"><li>烟草生长数学建模</li></a>
+                            <a href="../html/Model_2.html"><li>转录水平数学建模</li></a>
+                        </ul>
+                    </li>
+                    <a href="../html/HP.html">                
+                        <li>
+                           <span>HP</span>
+                           <a href=""></a>
+                        </li>
+                    </a>
+                    <a href="../HTML/Team.html">                
+                        <li>
+                           <span>团队</span>
+                           <a href=""></a>
+                        </li>
+                    </a>
+            </ul>
+        </nav>
+    </div>
+    <div id="bigger">
+        <div id="banner" style="background-image: url(../image/Model_0.webp);">
+            <h1>MODEL</h1>
+            <div id="button_click" >
+                <img src="../image/箭头_向下white.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 内容区 -->
+    <div id="all_content">
+        <div id="right_content">
+            <aside>
+                <h3>烟草生长数学建模</h3>
+                <ul class="aside_intro">
+                    <li data-index="0">模型假设</li>
+                    <li data-index="1">符号说明</li>
+                    <li data-index="2">模型建立与求解</li>
+                    <li data-index="3">模型评价与推广</li>
+                </ul>
+            </aside>
+        </div>
+        <div id="left_content">
+            <div class="content_intro">
+                <div class="inside_content">
+                    <h2>模型假设</h2>
+                        <h3 id="model_1">模型假设</h3>
+                        <p>&nbsp&nbsp&nbsp&nbsp（1）假设烟草生长过程中,只吸收碳与氮两种元素而生长,其它因素忽略不计；</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp（2）假设实验环境足够好，空气中二氧化碳的消耗量即为植物光合作用的吸收量减去植物呼吸作用的消耗量；</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp（3）假设烟草根茎中所吸收的氮元素即为整个植株吸收的氮元素；</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp（4）烟草中碳元素和氮元素满足一定的比例；</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp（4）假设烟草的生长速度随着植株的生长逐渐满直至趋于一个定值；</p>
+                        <h3 id="model">合理性分析</h3>
+                        <p>&nbsp&nbsp&nbsp&nbsp（1）碳和氮元素在植物的生长过程中占据了大部分的因素，可以将其视为植物生长的主要条件；</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp（2）在实验条件严格的情况下，可以认为空气中二氧化碳的消耗量即为二氧化碳吸收量，并且可以将其认为植物的光合作用与呼吸作用的共同作用；</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp（3）植物的根茎是吸收氮元素最多的器官，而叶子的吸收量要远低于根茎的吸收量；</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp（4）这显然符合烟草的生长发育规律；</p>
+                </div>
+            </div>
+            <div class="content_intro">
+                <div class="inside_content">
+                     <h2>符号说明</h2>
+                     <div id="image_inside_1" >
+                        <img src="../image/model_1.png" alt="" style="margin: 0 auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="content_intro">
+                <div class="inside_content" id="spcial_1">
+                    <h2>模型建立与求解</h2>
+                    <h3>模型建立</h3>
+                    <p>&nbsp&nbsp&nbsp&nbsp建立模型为： </p>
+                    <div id="model_latex">
+                        <p>$\dfrac{dw}{dt}=\gamma R_{1}v\left( t\right) F\left( C\left( t\right) ,N\left( t\right) \right)$</p> 
+                        <span>(1)</span>
+                    </div>
+                    <p>&nbsp&nbsp&nbsp&nbsp其中W表示烟草的重量；t表示时间；γ：转化因子；R<sub>1</sub>：烟草用于生长的能量比；V(t)：t时刻烟草体积；f(C(t)),N((t))：烟草对与碳和氮的吸收率；C(t)：t时刻烟草中二氧化碳含量；N(t)：t时刻烟草根中氮元素含量。</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp因为</p>
+                    <div id="model_latex">
+                        <p>$v\left( t\right) =\dfrac{w\left( t\right) }{\rho }$</p> 
+                        <span>(2)</span>
+                    </div>
+                    <p>&nbsp&nbsp&nbsp&nbsp所以</p>
+                    <div id="model_latex">
+                        <p>$\dfrac{dw}{dt}=\dfrac{\gamma }{\rho }R_{1}v\left( t\right) F\left( C\left( t\right) ,N\left( t\right) \right)$</p> 
+                        <span>(3)</span>
+                    </div>
+                    <div id="model_latex">
+                        <p>$f\left( C\left( t\right) ,N\left( t\right) \right) =\dfrac{\alpha C\left( t\right) N\left( t\right) }{1+\beta C\left( t\right) N\left( t\right) }$</p> 
+                        <span>(4)</span>
+                    </div>
+                    <p>&nbsp&nbsp&nbsp&nbsp其中α和β为常数。</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp随着t增大，C(t)，N(t)也增大，f(C(t),N(t))≈α/β。</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp所以模型可以再次化为：</p>
+                    <div id="model_latex">
+                        <p>$\dfrac{d\omega /dt}{dw\left( t\right) }=\dfrac{\gamma }{\rho }R_{1}\dfrac{\alpha C\left( t\right) N\left( t\right) }{1+\beta C\left( t\right) N\left( t\right) }$</p> 
+                        <span>(4)</span>
+                    </div>
+                    <p>&nbsp&nbsp&nbsp&nbsp根据假设可得：</p>
+                    <div id="model_latex">
+                        <p>$C\left( t\right) =C_{0}-C_{t}$</p> 
+                        <span>(5)</span>
+                    </div>
+                    <div id="model_latex">
+                        <p>$R^{2}=\dfrac{\sum \left( \widehat{w}_{i}-\overline{w}\right) ^{2}}{\Sigma \left( w_{i}-\overline{w}\right) ^{2}}$</p> 
+                        <span>(6)</span>
+                    </div>
+                    <p>&nbsp&nbsp&nbsp&nbsp其中w为烟草质量；w(t)为t时刻烟草质量；C<sub>0</sub>为初始时刻空气中二氧化碳含量；N(t)为t时刻烟草根中氮元素含量；C<sub>t</sub>为t时刻空气中二氧化碳含量；
+                        α,β,γ,ρ为未知量。
+                    </p>
+                </div>
+            </div>
+            <div class="content_intro">
+                <div class="inside_content">
+                     <h2>模型评价与推广</h2>
+                     <h3>模型优点</h3>
+                     <p>&nbsp&nbsp&nbsp&nbsp（1)考虑了碳元素和氮元素以及光合作用和呼吸作用对烟草植物生长的影响。</p>
+                     <p>&nbsp&nbsp&nbsp&nbsp（2）通过对植物生长的性质分析，建立微分方程模型并通过最小二乘法拟合，简单易懂，易于实现，且模型检验较为全面。</p>
+                     <h3>模型缺点</h3>
+                     <p>&nbsp&nbsp&nbsp&nbsp（1）由于个人能力原因，模型检验部分没有做好，可以进一步优化。</p>
+                     <p>&nbsp&nbsp&nbsp&nbsp（2）没有根据烟草的特性进行评估，并且没有将烟草的根和叶等器官分开考虑，只考虑了碳和氮元素并没有考虑磷等其他可能对烟草生长有影响的元素。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

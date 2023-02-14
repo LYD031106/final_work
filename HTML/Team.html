@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="../CSS/nav_2.css">
+    <link rel="stylesheet" media="screen and (min-width:900px)" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/Team.css">
+    <link rel="stylesheet" href="../CSS/TeamMember.css">
+    <script src="../JS/jquery.js"></script>
+    <script src="../bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="../JS/Team.js"></script>
+    <title>Document</title>
+    <style>
+        body,html{
+            min-width: 740px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <img src="../image/icon.svg" alt="">
+        <div class="none" id="button">
+            <img src="../image/展开收缩.svg" alt="">
+        </div>
+        <ul class="nav_ul">
+            <a href="../index.html" class="inside">
+                <li>
+                    <span>首页</span>
+                    <span></span>
+                </li>
+            </a>
+            <li class="inside">
+                <span>背景</span>
+                <img src="../image/向左.png" alt="" class="left_point">
+                <ul class="down_li">
+                    <a href="#">
+                        <li>农药污染现状</li>
+                    </a>
+                    <a href="#">
+                        <li>总结</li>
+                    </a>
+                </ul>
+            </li>
+            <li class="inside">
+                <span>实验</span>
+                <img src="../image/向左.png" alt="" class="left_point">
+                <ul class="down_li">
+                    <a href="#">
+                        <li>脱卤系统</li>
+                    </a>
+                    <a href="#">
+                        <li>有机磷降解系统</li>
+                    </a>
+                </ul>
+            </li>
+            <li class="inside">
+                <span>模型</span>
+                <img src="../image/向左.png" alt="" class="left_point">
+                <ul class="down_li">
+                    <a href="./Model_1.html">
+                        <li>烟草生长数学建模</li>
+                    </a>
+                    <a href="#">
+                        <li>转录水平数学建模</li>
+                    </a>
+                </ul>
+            </li> 
+            <a href="#" class="inside">
+                <li>
+                    <span>HP</span>
+                    <span></span>
+                </li>
+            </a>
+            <a href="./Team.html" class="inside">
+                <li>
+                    <span>团队</span>
+                    <span></span>
+                </li>
+            </a>
+        </ul>
+    </nav>
+    <div style="height: 120px;"></div>
+    <!-- 轮播图 -->
+    <div id="myCarousel" class="carousel slide" data-interval="1000000">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active" id="indicator" style="background-image: url(../image/user/T--SZU-CHINA--photo_dzt.jpg);"></li>
+            <li data-target="#myCarousel" data-slide-to="1" id="indicator" style="background-image: url(../image/user/T--SZU-CHINA--photo_cxy.jpg);"></li>
+            <li data-target="#myCarousel" data-slide-to="2" id="indicator" style="background-image: url(../image/user/T--SZU-CHINA--photo_ljy.jpg);"></li>
+            <li data-target="#myCarousel" data-slide-to="3" id="indicator" style="background-image: url(../image/user/T--SZU-CHINA--photo_lll.jpg);"></li>
+            <li data-target="#myCarousel" data-slide-to="4" id="indicator" style="background-image: url(../image/user/T--SZU-CHINA--photo_tjq.jpg);"></li>
+            <li data-target="#myCarousel" data-slide-to="5" id="indicator" style="background-image: url(../image/user/T--SZU-CHINA--photo_cxy.jpg);"></li>
+        </ol>   
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="carousel_inner_item">
+                    <div class="carousel_img">
+                        <img src="../image/user/T--SZU-CHINA--photo_dzt.jpg" alt="">
+                        <div class="information">
+                            <h2>Zhongting Deng</h2>
+                            <hr>
+                            <span>Lab</span>
+                            <p>&nbsp&nbspZhongting is a fourth-year student majoring in biotechnology from Shenzhen University, mainly responsible for phosphorylation of ssDNA, synthesis of circular DNA</p>
+                        </div>
+                    </div>
+                    <span class="carousel-caption" style="padding-top: 0; padding-bottom: 0; bottom: 5px; color: black;">Zhongting Deng</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel_inner_item">
+                    <div class="carousel_img">
+                        <img src="../image/user/T--SZU-CHINA--photo_cxy.jpg" alt="">
+                        <div class="information">
+                            <h2>Xinyong Chen</h2>
+                            <hr>
+                            <span>Lab</span>
+                            <p>&nbsp&nbspXinyong is a 2016 student of Computer and Software College from Shenzhen University, mainly responsible for designing</p>
+                        </div>
+                    </div>
+                    <span class="carousel-caption" style="padding-top: 0; padding-bottom: 0; bottom: 5px; color: black;">Xinyong Chen</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel_inner_item">
+                    <div class="carousel_img">
+                        <img src="../image/user/T--SZU-CHINA--photo_ljy.jpg" alt="">
+                        <div class="information">
+                            <h2>Jingying Lin</h2>
+                            <hr>
+                            <span>HP</span>
+                            <p>&nbsp&nbspJingying is a third-year student of biological science at the College of Life Sciences and Oceanography, Shenzhen University.</p>
+                        </div>
+                    </div>
+                    <span class="carousel-caption" style="padding-top: 0; padding-bottom: 0; bottom: 5px; color: black;">Jingying Lin</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel_inner_item">
+                    <div class="carousel_img">
+                        <img src="../image/user/T--SZU-CHINA--photo_lll.jpg" alt="">
+                        <div class="information">
+                            <h2>Lingling Liao</h2>
+                            <hr>
+                            <span>Lab</span>
+                            <p>&nbsp&nbspLingling is a junior of Shenzhen University majoring in biology, who has already learnt corresponding experimental techniques.</p>
+                        </div>
+                    </div>
+                    <span class="carousel-caption" style="padding-top: 0; padding-bottom: 0; bottom: 5px; color: black;">Lingling Liao</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel_inner_item">
+                    <div class="carousel_img">
+                        <img src="../image/user/T--SZU-CHINA--photo_tjq.jpg" alt="">
+                        <div class="information">
+                            <h2>Jiaqi Tang</h2>
+                            <hr>
+                            <span>Lab</span>
+                            <p>&nbsp&nbspJiaqi Tang mainly responsible for phosphorylation of ssDNA, synthesis of circular DNA and production of nanoparticlemainly responsible for phosphorylation of ssDNA, synthesis of circular DNA and production of nanoparticle</p>
+                        </div>
+                    </div>
+                    <span class="carousel-caption" style="padding-top: 0; padding-bottom: 0; bottom: 5px; color: black;">Jiaqi Tang</span>
+                </div>
+            </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <h1 style="text-align: center;">Team Member</h1>
+    <!-- 个人单独介绍 -->
+    <div class="container">   
+        <div class="col-md-6 col-xs-12">    
+            <div class="picture">
+                <div class="picture_inside">                
+                    <img src="../image/user/T--SZU-CHINA--photo_cxy.jpg" alt="">
+                    <span class="name">Xinyong Chen</span>
+                </div>
+                <div class="introduction">
+                    <h3>职责：Lab</h3>
+                    <P>Responsible for screening the specific genes from the transcript of Mikania micrantha, making the drone that can identify the weed and spray our RNAi herbicide automatically as well as the modelling works.</P>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-12">    
+            <div class="picture">
+                <div class="picture_inside">                
+                    <img src="../image/user/T--SZU-CHINA--photo_dzt.jpg" alt="">
+                    <span class="name">Zhongting Deng</span>
+                </div>
+                <div class="introduction">
+                    <h3>职责：Lab</h3>
+                    <p>Responsible for lab works like phosphorylation of ssDNA, synthesis of circular DNA and production of nanoparticles and participates in human practice and collaboration.</p>
+                </div>
+    </div>
+    </div>
+        <div class="col-md-6 col-xs-12">    
+            <div class="picture">
+        <div class="picture_inside">                
+            <img src="../image/user/T--SZU-CHINA--photo_ljy.jpg" alt="">
+            <span class="name">Jingying Lin</span>
+        </div>
+        <div class="introduction">
+            <h3>职责：HP</h3>
+            <P>Responsible for lab works like testing the function of the RNAi herbicide, including cultivation and extraction of RNA from the leaves of Mikania micrantha and characterization of the gene expression. Also participates in human practice and collaboration.</P>
+        </div>
+    </div></div>
+        <div class="col-md-6 col-xs-12">    <div class="picture">
+        <div class="picture_inside">                
+            <img src="../image/user/T--SZU-CHINA--photo_lll.jpg" alt="">
+            <span class="name">Lingling Liao</span>
+        </div>
+        <div class="introduction">
+            <h3>职责：Lab</h3>
+            <p>The leader of the experimental group, responsible for lab works, parts characterization and submission, team wiki editing</p>
+        </div>
+    </div></div>
+        <div class="col-md-6 col-xs-12" id="last" >    <div class="picture" >
+        <div class="picture_inside">                
+            <img src="../image/user/T--SZU-CHINA--photo_tjq.jpg" alt="">
+            <span class="name">Jiaqi Tang</span>
+        </div>
+        <div class="introduction">
+            <h3>职责：Lab</h3>
+            <p>The leader of the human practices and collaboration with different iGEM teams. He is responsible for team building, team wiki editing</p>
+        </div>
+    </div>
+    </div>
+        
+    </div>
+    </div>
+</body>
+</html>
