@@ -40,6 +40,7 @@ class transform_3D{
 
 
 window.onload=function(){
+    $(".loader_wrapper").fadeOut("slow");
     var section_1_first=document.querySelector(".section_1 .inside div h2")
     var section_1_last=document.querySelector(".section_1 .inside div h3")
     button=document.querySelectorAll("nav>ul>li")
